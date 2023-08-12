@@ -1,0 +1,19 @@
+// views/users.pug
+extends layout
+
+block content
+  h1 Users List
+
+  table
+    thead
+      tr
+        th ID
+        th Name
+        th Email
+
+    tbody
+      each user in users
+        tr
+          td= user.id
+          td= user.name
+          td= user.email
